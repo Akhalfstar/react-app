@@ -1,22 +1,41 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route , Routes } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import "./index.css"; 
+import "./index.css";
 import { About, Contact, Github, Home } from "./component/Comp.js";
+import { githubInfoLoader } from "./component/Github/Github.jsx";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "about", element: <About /> },
+      { path: "contact", element: <Contact /> },
+      { path: "github", element: <Github />, loader: githubInfoLoader },
+    ],
+  },
+]);
 
-const root = document.getElementById("root");
-
-ReactDOM.createRoot(root).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element = {<App/>} >
-        <Route index element = {<Home/>} />
-        <Route path="/About" element = {<About/>} />
-        <Route path="/Contact" element = {<Contact/>} />
-        <Route path="/Github" element = {<Github/>} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
 );
+
+
+// const root = document.getElementById("root");
+
+// ReactDOM.createRoot(root).render(
+//   <BrowserRouter>
+//     <Routes>
+//       <Route path="/" element = {<App/>} >
+//         <Route index element = {<Home/>} />
+//         <Route path="/About" element = {<About/>} />
+//         <Route path="/Contact" element = {<Contact/>} />
+//         <Route loader={githubInfoLoader}
+//         path="/Github" element = {<Github/>} />
+//       </Route>
+//     </Routes>
+//   </BrowserRouter>
+// );
