@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route , Routes } from "react-router";
 import App from "./App.jsx";
 import "./index.css"; 
-import { About, Contact, Home } from "./component/Comp.js";
+import { About, Contact, Github, Home } from "./component/Comp.js";
 
 
 const root = document.getElementById("root");
@@ -15,6 +15,7 @@ ReactDOM.createRoot(root).render(
         <Route index element = {<Home/>} />
         <Route path="/About" element = {<About/>} />
         <Route path="/Contact" element = {<Contact/>} />
+        <Route path="/Github" element = {<Github/>} />
       </Route>
     </Routes>
   </BrowserRouter>
