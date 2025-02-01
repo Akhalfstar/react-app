@@ -1,4 +1,5 @@
 import React from "react";
+import { Btn } from "../Comp";
 
 function Footer() {
   return (
@@ -20,10 +21,10 @@ function Footer() {
                     Resources
                 </li>
                 <li className="text-sm font-medium">
-                    Home
+                <Btn lable="Home" lnk="/" />
                 </li>
                 <li className="text-sm font-medium">
-                    About
+                <Btn lable="About" lnk="/About" />
                 </li>
             </ul>
             <ul className="flex flex-col gap-3.5">
@@ -31,10 +32,10 @@ function Footer() {
                     Follow Us
                 </li>
                 <li className="text-sm font-medium">
-                    Github
+                    <Btn lable="Github" lnk="#" />
                 </li>
                 <li className="text-sm font-medium">
-                    Discord
+                <Btn lable="Discord" lnk="#" />
                 </li>
             </ul>
             <ul className="flex flex-col gap-3.5">

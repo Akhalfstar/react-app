@@ -1,5 +1,4 @@
 import React from 'react'
-// import {NavLink} from 'react-router-dom';
 import { NavLink } from "react-router-dom";
 
 function Btn({
@@ -7,12 +6,9 @@ function Btn({
     lnk,
 }) {
   return (
-    // <NavLink to={lnk} >
-    //     {lable}
-    // </NavLink>
-    <div className=' font-medium'>
+    <NavLink to={lnk} className={({isActive})=> isActive? " text-orange-500" : ""}  >
         {lable}
-    </div>
+    </NavLink>
   )
 }
 

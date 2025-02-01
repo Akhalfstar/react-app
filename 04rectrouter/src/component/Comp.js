@@ -1,6 +1,6 @@
 import Footer from "./Footer/Footer"
 import Nav from "./Nav/Nav"
-import Btn from "./Btn"
+import Btn from "./Btn/Btn"
 import Contact from "./Contact/Contact"
 import Home from "./Home/Home"
 import About from "./About/About"
