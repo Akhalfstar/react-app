@@ -6,7 +6,7 @@ function Btn({
     lnk,
 }) {
   return (
-    <NavLink to={lnk} className={({isActive})=> isActive? " text-orange-500" : ""}  >
+    <NavLink to={lnk} className={({isActive})=> isActive? " text-orange-500 " : ""}  >
         {lable}
     </NavLink>
   )

@@ -7,8 +7,8 @@ function Nav() {
       <div className=" w-1/3 h-full flex justify-items-start items-center gap-1">
         <img src="/images/logo.png" className="h-full" />
         <div className="flex flex-col text-xl ">
-        <span className=" text-orange-400 font-bold -mb-2.5  "  >Your</span>
-        <span className="font-bold  "  >Logo</span>
+          <span className=" text-orange-400 font-bold -mb-2.5  ">Your</span>
+          <span className="font-bold  ">Logo</span>
         </div>
       </div>
       <div className=" flex w-1/3  justify-evenly  ">
@@ -18,12 +18,12 @@ function Nav() {
         <Btn lable="Github" lnk="/Github" />
       </div>
 
-      <div className=" flex w-1/3 justify-end gap-10  ">
-        <Btn lable="Login" lnk="#" />
-        <Btn lable="Get started" lnk="#" />
+      <div className=" flex w-1/3 justify-end gap-10 items-center  ">
+        <Btn lable="Get started" lnk="Get started" />
+        <div className=" bg-gray-100 p-2 px-6  font-medium rounded-md shadow shadow-gray-300 hover:bg-amber-400 ">
+          <Btn lable="Login" lnk="Login" /> 
+        </div>
       </div>
-
-
     </div>
   );
 }
