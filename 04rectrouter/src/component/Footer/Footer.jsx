@@ -29,10 +29,10 @@ function Footer() {
             <ul className="flex flex-col gap-3.5">
               <li className=" uppercase mb-2 font-bold text-xs">Follow Us</li>
               <li className="text-sm font-medium">
-                <Btn lable="Github" lnk="#" />
+                <Btn lable="Github" lnk="/Github" />
               </li>
               <li className="text-sm font-medium">
-                <Btn lable="Discord" lnk="#" />
+                <Btn lable="Discord" lnk="Discord" />
               </li>
             </ul>
             <ul className="flex flex-col gap-3.5">
