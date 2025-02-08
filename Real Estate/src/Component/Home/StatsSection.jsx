@@ -7,7 +7,7 @@ const StatsCard = ({ number, label, className = "" }) => (
 
 const StatsSection = () => {
   return (
-    <section className=" pb-10">
+    <section className="">
       <div className=" grid md:gri\
        lg:grid-cols-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-6">
         <div className="grid grid-col-2 md:grid-cols-2 lg:grid-cols-2 gap-6">

@@ -5,8 +5,7 @@ import Card2 from "./Card2";
 const PROPERTY_DATA = [
   {
     id: 1,
-    imageUrl:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3",
+    imageUrl: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3",
     price: 1200000,
     address: "21 Gorham Road",
     city: "Belmont",
@@ -30,7 +29,7 @@ const PROPERTY_DATA = [
   {
     id: 3,
     imageUrl:
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&w=250&q=80&auto=format",
     price: 850000,
     address: "789 Wooden Lane",
     city: "Belmont",
@@ -42,7 +41,7 @@ const PROPERTY_DATA = [
   {
     id: 4,
     imageUrl:
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?ixlib=rb-4.0.3&w=250&q=80&auto=format",
     price: 950000,
     address: "101 High Rise Blvd",
     city: "Belmont",
@@ -55,7 +54,7 @@ const PROPERTY_DATA = [
 
 const PropertyGrid = () => {
   return (
-    <div className="flex justify-center mb-20">
+    <div className="flex justify-center ">
   <div className="container max-w-7xl mx-auto p-4">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-6">
       {/* Featured Property */}
