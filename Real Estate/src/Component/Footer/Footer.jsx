@@ -66,7 +66,9 @@ const Footer = () => {
             {/* Logo Column */}
             <div className="col-span-1">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-white rounded-full mr-2"></div>
+                <div className="w-8 h-8 rounded-full mr-2">
+                  <img src="/images/logo.png" />
+                </div>
                 <span className="text-xl font-bold">Eastate</span>
               </div>
               <p className="text-gray-400 text-sm">
