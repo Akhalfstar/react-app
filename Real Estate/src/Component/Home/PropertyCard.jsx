@@ -38,7 +38,7 @@ const PropertyCard = ({
         />
         
         {/* Favorite Button */}
-        <button className="absolute top-3 right-3 p-2 rounded-full bg-white hover:bg-gray-100 transition-colors">
+        <button className="absolute top-3 right-3 p-2 rounded-full bg-white hover: cursor-pointer hover:bg-gray-100 transition-colors">
           <HeartIcon />
         </button>
 
