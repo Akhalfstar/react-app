@@ -1,7 +1,7 @@
-const HeartIcon = () => (
+const HeartIcon = ({filled}) => (
     <svg 
-      className="w-6 h-6" 
-      fill="none" 
+      className={`w-6 h-6 ${filled ? "text-red-500" : "text-gray-400"}`}
+      fill={filled ? "currentColor" : "none"}
       stroke="currentColor" 
       viewBox="0 0 24 24"
     >
